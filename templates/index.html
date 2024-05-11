@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NLP-project</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+    <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo" class="logo">
+    <!-- <h1 class="course">NLP-project</h1> -->
+
+    <div class="login">
+        
+        <h1>Fake News📰 Detector</h1>
+        <p style="color:goldenrod;">Devolped by: MOSTAFA MAGDY</p>
+
+        <form action="{{ url_for('predict')}}" method="POST">
+            <textarea name="message" rows="6" cols="50" required="required" style="font-size: 18pt">{{mess}}</textarea>
+            <br> </br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+            <div class="results">
+                {% if prediction == 'FAKE' %}
+                <h2 style="color:red;">Oops! it Looks Spam⚠️News📰 </h2>
+                {% elif prediction == 'REAL' %}
+                <h2 style="color:green;"><b>Mmm it Looks Real News📰</b></h2>
+                {% endif %}
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
