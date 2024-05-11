@@ -5,7 +5,8 @@
 **Author:** Mostafa Magdy Hassan  
 
 ---
-![Project Image](https://github.com/Mostafa10770/Fake-News-Detection/blob/main/s1.PNG)
+![Project Image](https://github.com/Mostafa10770/Fake-News-Detection/blob/main/Flask_deploy.png)
+
 
 ## Project Description:
 
