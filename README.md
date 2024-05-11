@@ -170,5 +170,5 @@ The success of the project sets the stage for future enhancements in fake news d
    - Run the Flask app using the following command:
    
      ```
-     python app.py
+     python Fake_News_Det.py
      ```
