@@ -1,4 +1,4 @@
-# NEWS-DETECTION-MACHINE-LEARNING
+# NEWS-DETECTION MACHINE-LEARNING + BERT transformer
 
 ### Natural Language Processing 
 
